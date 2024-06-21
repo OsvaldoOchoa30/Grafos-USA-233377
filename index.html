@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free America</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal/minimal.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.min.js"></script>
+</head>
+<body>
+    
+
+        <main >
+            
+        <div class="main-container">
+            <h1>Tour United States</h1>
+            <div class="AgregarCiudad">
+                
+                <input type="text" placeholder="Ciudad" id="ciudad">
+                <button type="button" id="agregarCiudad">Agregar Ciudad</button>
+            </div>
+
+            <div class="CreaciondeRutas">
+                <input type="text" placeholder="Origen" id="origen">
+                <input type="text" placeholder="Destino" id="destino">
+                <input type="text" placeholder="Distacia" id="peso">
+                <button type="button" id="conectarCiudades">Agregar ruta</button>
+            </div>
+            
+
+            <div class="Busquedas">
+
+                <button type="button" id="Anchura" >Ver Ciudades por Anchura</button>
+                <button type="button" id="Profundidad">Ver Ciudades por Profundidad</button>
+            </div>
+
+            <div id="verAnchura"></div>
+            <div id="verProfundidad"></div>
+
+
+
+            <div>
+            <input type="text" placeholder="Origen" id="rutaCortaOrigen">
+            <input type="text" placeholder="Destino" id="rutaCortaDestino">
+            <button type="button" id="buscar">Buscar</button>
+            <div id="rutaCorta"></div>
+
+            </div>
+           
+        </div>
+
+
+   </main>
+           
+    
+    <script type="module" src="./src/controllers/script.mjs"></script> <!--se agrega ./ al src-->
+</body>
+</html>
